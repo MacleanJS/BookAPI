@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="/dom.js" defer></script>
+        <script type="module" src="/script.js" defer></script>
+
+        <script
+            src="https://kit.fontawesome.com/5ebb6a8096.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>BookAPI</title>
+    </head>
+    <body>
+        <header class="header">
+            <p class="header-para">Google Books Search</p>
+            <p class="header-desc">
+                Search a term and receive all books available through the Google
+                book API!
+            </p>
+        </header>
+        <form class="search">
+            <div class="search-container">
+                <input
+                    type="text"
+                    class="search-container__text"
+                    placeholder="enter your query here..."
+                />
+                <input
+                    type="submit"
+                    class="search-container__submit"
+                    value=""
+                />
+            </div>
+        </form>
+        <div class="books"></div>
+    </body>
+</html>
